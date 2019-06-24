@@ -1,4 +1,4 @@
-﻿![Autonomer Staubsaugroboter](staubsaugroboter.png)
+![Autonomer Staubsaugroboter](staubsaugroboter.png)
 
 # Download
 
@@ -8,7 +8,7 @@ Lade die aktuelle Version hier herunter: [https://github.com/mikebarkmin/autonom
 
 ## Vorbereitung
 
-Die Bibliotheken aus +libs werden automatisch geladen. (siehe [How do I use custom class libraries](https://www.bluej.org/faq.html#faq_How_do_I_use_custom_class_libraries__JARs__)).
+Installiere die Bibliotheken vom lib Ordner in deinen BlueJ libraries Ordner (siehe [How do I use custom class libraries](https://www.bluej.org/faq.html#faq_How_do_I_use_custom_class_libraries__JARs__)).
 
 ## Ausführung
 
@@ -20,13 +20,12 @@ Führe main von MeineWelt aus.
 
 Linux:
 ```
-javac -classpath ".:+libs/*" MeineWelt.java
-java -classpath ".:+libs/*" MeineWelt
+javac -classpath ".:lib/*" MeineWelt.java
+java -classpath ".:lib/*" MeineWelt
 ```
 
 Windows:
 ```
-javac -classpath ".;+libs/*" MeineWelt.java
-java -classpath ".;+libs/*" MeineWelt
+javac -classpath ".;lib/*" MeineWelt.java
+java -classpath ".;lib/*" MeineWelt
 ```
-
