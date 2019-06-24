@@ -1,4 +1,4 @@
 #!/bin/bash
 rm *.class
-javac -classpath ".:lib/*" $1.java
-java -classpath ".:lib/*" $1
+javac -classpath ".:+libs/*" $1.java
+java -classpath ".:+libs/*" $1
