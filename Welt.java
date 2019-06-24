@@ -111,7 +111,6 @@ public abstract class Welt {
       while(this.raster.hasAccess()) {
         this.raster.getContent().loesche();
         this.raster.remove();
-        this.raster.next();
       }
     }
   }

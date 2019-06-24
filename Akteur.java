@@ -191,7 +191,6 @@ public abstract class Akteur {
       GLBewegbaresObjekt gl = this.objekte.getContent();
       gl.loesche();
       this.objekte.remove();
-      this.objekte.next();
     }
   }
 }
