@@ -8,7 +8,7 @@ Lade die aktuelle Version hier herunter: [https://github.com/mikebarkmin/autonom
 
 ## Vorbereitung
 
-Installiere die Bibliotheken vom lib Ordner in deinen BlueJ libraries Ordner (siehe [How do I use custom class libraries](https://www.bluej.org/faq.html#faq_How_do_I_use_custom_class_libraries__JARs__)).
+Die Bibliotheken aus dem Ordner +libs werden automatisch dem Klassenpfad hinzugefügt. (siehe [How do I use custom class libraries](https://www.bluej.org/faq.html#faq_How_do_I_use_custom_class_libraries__JARs__)).
 
 ## Ausführung
 
@@ -20,12 +20,12 @@ Führe main von MeineWelt aus.
 
 Linux:
 ```
-javac -classpath ".:lib/*" MeineWelt.java
-java -classpath ".:lib/*" MeineWelt
+javac -classpath ".:+libs/*" MeineWelt.java
+java -classpath ".:+libs/*" MeineWelt
 ```
 
 Windows:
 ```
-javac -classpath ".;lib/*" MeineWelt.java
-java -classpath ".;lib/*" MeineWelt
+javac -classpath ".;+libs/*" MeineWelt.java
+java -classpath ".;+libs/*" MeineWelt
 ```
