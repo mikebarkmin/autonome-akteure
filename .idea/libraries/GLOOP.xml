@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="GLOOP">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/GLOOP.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/GLOOP.jar!/doc" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
