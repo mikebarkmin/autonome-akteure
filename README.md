@@ -1,5 +1,9 @@
 ![Autonomer Staubsaugroboter](staubsaugroboter.png)
 
+# Download
+
+Lade die aktuelle Version hier herunter: [https://github.com/mikebarkmin/autonome-akteure/archive/master.zip](https://github.com/mikebarkmin/autonome-akteure/archive/master.zip)
+
 # BlueJ
 
 ## Vorbereitung
