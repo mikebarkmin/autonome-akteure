@@ -22,14 +22,14 @@ public abstract class Welt {
   public Welt(int breite, int laenge, int kachelGroesse, boolean zeigeRaster) {
     this(breite, laenge, kachelGroesse);
     this.zeigeRaster = zeigeRaster;
+    this.zeigeRaster(zeigeRaster);
   }
 
   public Welt(int breite, int laenge, int kachelGroesse) {
     this.kamera = new GLEntwicklerkamera();
+    this.raster = new List<>();
     this.licht = new GLLicht();
     this.objekte = new List<>();
-    this.raster = new List<>();
-    this.zeigeRaster = false;
     this.begrenzt = true;
     this.intervall = 1000;
 
@@ -83,10 +83,6 @@ public abstract class Welt {
   }
 
   public void starte() {
-    if(this.zeigeRaster) {
-      this.zeichneRaster();
-    }
-
     List<Akteur> copyOfObjekte = new List<>();
     objekte.toFirst();
     while(objekte.hasAccess()) {
@@ -103,6 +99,20 @@ public abstract class Welt {
         copyOfObjekte.next();
       }
       Sys.warte(intervall);
+    }
+  }
+
+  public void zeigeRaster(boolean r) {
+    this.zeigeRaster = r;
+    if(this.zeigeRaster) {
+      this.zeichneRaster();
+    } else {
+      this.raster.toFirst();
+      while(this.raster.hasAccess()) {
+        this.raster.getContent().loesche();
+        this.raster.remove();
+        this.raster.next();
+      }
     }
   }
 
