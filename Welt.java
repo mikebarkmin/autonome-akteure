@@ -7,9 +7,9 @@ import bGLOOP.Sys;
 
 public abstract class Welt {
 
-  private int breite;
-  private int laenge;
-  private int kachelGroesse;
+  final int breite;
+  final int laenge;
+  final int kachelGroesse;
 
   private List<Akteur> objekte;
   private List<GLQuader> raster;

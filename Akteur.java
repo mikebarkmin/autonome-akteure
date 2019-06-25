@@ -1,16 +1,13 @@
 import bGLOOP.GLBewegbaresObjekt;
 
 public abstract class Akteur {
-  private int x;
-  private int y;
-  private int z;
-
-  private int breite;
-  private int laenge;
+  int x;
+  int y;
+  int z;
+  int rotation = 0;
+  Welt welt;
 
   private List<GLBewegbaresObjekt> objekte;
-  private int rotation = 0;
-  private Welt welt;
 
   public Akteur() {
     objekte = new List<>();
@@ -45,22 +42,6 @@ public abstract class Akteur {
 
   public int gibZPixel() {
     return z * welt.gibKachelGroesse();
-  }
-
-  public int gibBreite() {
-    return breite;
-  }
-
-  public int gibBreitePixel() {
-    return breite * welt.gibKachelGroesse();
-  }
-
-  public int gibLaenge() {
-    return laenge;
-  }
-
-  public int gibLaengePixel() {
-    return laenge * welt.gibKachelGroesse();
   }
 
   public int gibRotation() {
